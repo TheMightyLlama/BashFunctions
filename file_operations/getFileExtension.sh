@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function getFileName () {
+function getFileExtension () {
     
     #Passed value
     filename=$1;
@@ -9,12 +9,10 @@ function getFileName () {
     #Strip longest match of */ from start
     filename=${1##*/}
 
-    #Remove extension
-    filename=${filename%.*}
+    #Remove filename
+    extension=${filename##*.}
 
     #Return name of file
-    echo $filename;
+    echo $extension;
 
 }
-
-echo $(getFileName "etc/etc/etc/hello.txt");
