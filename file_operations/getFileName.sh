@@ -1,10 +1,13 @@
 #!/bin/bash
 
 function getFileName () {
+    
+    #Remove directories
+    filename=${1##*/}
 
-    filename=$(basename "$1")
-    extension="${filename##*.}"
-    filename="${filename%.*}"
+    #Remove extension
+    filename=${filename%.*}
+
     echo $filename;
 
 }
