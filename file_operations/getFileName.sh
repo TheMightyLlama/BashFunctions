@@ -16,5 +16,3 @@ function getFileName () {
     echo $filename;
 
 }
-
-echo $(getFileName "etc/etc/etc/hello.txt");
