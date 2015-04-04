@@ -10,5 +10,3 @@ function appendToEndOfFile () {
     echo $text >> $filename;
 
 }
-
-appendToEndOfFile file.txt "lolololo";
