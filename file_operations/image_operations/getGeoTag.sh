@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run on photos with embedded geo-data to get the coordinates and open it in a map
-# Adapted from http://www.evanlovely.com/utilities/photo-geotags/
+# Adapted (not much really) from http://www.evanlovely.com/utilities/photo-geotags/
 # Accepts image as argument
 
 getGeoTag () {
